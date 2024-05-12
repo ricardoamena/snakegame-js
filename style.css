@@ -1,0 +1,57 @@
+* {
+    font-family: monospace;
+}
+
+#board, .boardInfo {
+    max-width: 500px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+
+}
+
+#gameOver {
+    display: none;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start {
+    background-color: #d83eff;
+    border-color: 5px black;
+    border-radius: 5px;
+    color: white;
+}
+
+#start:hover {
+    color: #e371ff;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: rgb(46, 77, 255);
+}
+
+.snakeSquare {
+    background-color: rgb(62, 252, 189);
+}
+
+.foodSquare {
+    background-color: #ff1f1f;
+}
+
+
